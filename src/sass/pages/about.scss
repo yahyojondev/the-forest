@@ -1,0 +1,231 @@
+.about {
+  padding: 100px 0px 121px;
+  background: rgb(30, 30, 30);
+  @media only screen and (min-width: 1100px) {
+    padding-top: 0px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 1000px) {
+      gap: 99px;
+    }
+    .about__top {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      @media only screen and (min-width: 1100px) {
+        flex-direction: row;
+      }
+      &__left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 112px;
+        h2 {
+          font-family: Oswald;
+          font-weight: 600;
+          font-size: 90px;
+          font-size: 30px;
+          line-height: 118.53px;
+          color: rgba(255, 255, 255, 0.1);
+          @media only screen and (min-width: 700px) {
+            font-size: 90px;
+          }
+        }
+        p {
+          color: rgba(255, 255, 255, 0.1);
+          font-family: Oswald;
+          font-size: 80px;
+          font-weight: 600;
+          line-height: 131.7%;
+          letter-spacing: 0%;
+          text-transform: uppercase;
+        }
+        &__absolute {
+          position: absolute;
+          top: 100px;
+          display: flex;
+          gap: 32px;
+          @media only screen and (min-width: 700px) {
+            left: 87px;
+          }
+          .about__span {
+            height: 70px;
+            width: 4px;
+            background-color: rgb(134, 218, 68);
+          }
+          &__right {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .about__bottom__button {
+              border: none;
+              background-color: transparent;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              color: rgb(255, 255, 255);
+              font-family: Oswald;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 19px;
+              letter-spacing: 6%;
+              width: 100%;
+              max-width: 122px;
+              span {
+                width: 108px;
+                height: 2px;
+                background-color: rgb(134, 218, 68);
+              }
+            }
+            h4 {
+              width: 100%;
+              max-width: 500px;
+              font-family: Oswald;
+              color: #fff;
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 131.7%;
+              letter-spacing: 0%;
+              text-transform: uppercase;
+              @media only screen and (min-width: 500px) {
+                font-size: 36px;
+              }
+              span {
+                color: rgb(134, 218, 68);
+              }
+            }
+            .about__left__text__wrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              p {
+                color: rgb(134, 218, 68);
+                font-family: Oswald;
+                font-size: 27px;
+                font-weight: 600;
+                line-height: 131.7%;
+                letter-spacing: 0%;
+              }
+              span {
+                width: 100%;
+                max-width: 483px;
+                color: rgb(255, 255, 255);
+                font-family: Oswald;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 200%;
+                letter-spacing: 6%;
+              }
+            }
+          }
+        }
+      }
+      &__right {
+        margin-top: 140px;
+        position: relative;
+        @media only screen and (min-width: 500px) {
+          margin-top: 270px;
+        }
+        .about__top__right__img {
+          width: 100%;
+          max-width: 599px;
+          height: 738px;
+          object-fit: contain;
+        }
+
+        .about__top__right__img__absolute {
+          position: absolute;
+          top: 340px;
+          right: 240px;
+          width: 55px;
+          height: 55px;
+          object-fit: contain;
+          display: none;
+          @media only screen and (min-width: 1280px) {
+            display: flex;
+          }
+        }
+      }
+    }
+    .about__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 300px;
+      @media only screen and (min-width: 1200px) {
+        gap: 0px;
+        flex-direction: row;
+      }
+      &__left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-family: Oswald;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 118.53px;
+          color: rgba(255, 255, 255, 0.1);
+          @media only screen and (min-width: 700px) {
+            font-size: 90px;
+          }
+        }
+        .about__top__left__absolute {
+          p {
+            width: 100%;
+            max-width: 504px;
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 200.27%;
+            letter-spacing: 6%;
+          }
+          button {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            span {
+              width: 108px;
+              height: 2px;
+              background-color: rgb(134, 218, 68);
+            }
+            border: none;
+            outline: none;
+            width: 122px;
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 6%;
+          }
+        }
+      }
+      &__right {
+        position: relative;
+        .about__bottom__right__img {
+          margin-top: 80px;
+          width: 100%;
+          object-fit: contain;
+          @media only screen and (min-width: 1200px) {
+            max-width: 599px;
+          }
+        }
+        .about__bottom__right__img__absolute {
+          position: absolute;
+          top: 280px;
+          right: 270px;
+          display: none;
+          @media only screen and (min-width: 1200px) {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

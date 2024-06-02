@@ -1,0 +1,129 @@
+.hero {
+  padding: 150px 0px 54px;
+  background: rgb(30, 30, 30);
+  @media only screen and (min-width: 500px) {
+    padding: 270px 0px 54px;
+  }
+  @media only screen and (min-width: 1300px) {
+    background-color: transparent;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    .hero__top {
+      display: flex;
+      align-items: center;
+      @media only screen and (min-width: 500px) {
+        padding-left: 82px;
+        gap: 350px;
+      }
+      &__left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media only screen and (min-width: 500px) {
+          gap: 96px;
+        }
+        .span {
+          height: 400px;
+          width: 2px;
+          background-color: rgb(134, 218, 68);
+        }
+        .text__wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          h1 {
+            width: 100%;
+            color: #fff;
+            font-family: Oswald;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            @media only screen and (min-width: 500px) {
+              line-height: 89px;
+              font-size: 60px;
+              max-width: 532px;
+            }
+            span {
+              color: rgb(134, 218, 68);
+            }
+          }
+          p {
+            width: 100%;
+            max-width: 517px;
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 167%;
+            letter-spacing: 5%;
+            @media only screen and (min-width: 500px) {
+              font-size: 20px;
+            }
+          }
+          button {
+            width: 100%;
+            max-width: 210px;
+            height: 56px;
+            border: 1px solid rgb(134, 218, 68);
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 167%;
+            letter-spacing: 6%;
+          }
+        }
+      }
+      img {
+        width: 78px;
+        height: 78px;
+        object-fit: contain;
+        display: none;
+        @media only screen and (min-width: 500px) {
+          display: flex;
+        }
+      }
+    }
+    .hero__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      @media only screen and (min-width: 500px) {
+        gap: 0;
+        flex-direction: row;
+      }
+      &__left {
+        display: flex;
+        align-items: center;
+        span {
+          color: #fff;
+          font-family: Oswald;
+          font-size: 19px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: 0%;
+        }
+        p {
+          color: rgb(134, 218, 68);
+          font-family: Oswald;
+          font-size: 26px;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 0%;
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 338px;
+        height: 130px;
+        object-fit: contain;
+      }
+    }
+  }
+}

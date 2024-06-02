@@ -1,0 +1,98 @@
+.project {
+  background: rgb(30, 30, 30);
+  &__wrapper {
+    &__hero {
+      padding: 200px 0px 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      @media only screen and (min-width: 1285px) {
+        flex-direction: row;
+        padding: 200px 0px 121px;
+      }
+      .project__hero__img {
+        width: 100%;
+        height: 560px;
+        object-fit: contain;
+        @media only screen and (min-width: 1285px) {
+          max-width: 800px;
+        }
+      }
+      &__left {
+        display: flex;
+        justify-content: center;
+        @media only screen and (min-width: 500px) {
+          gap: 32px;
+          padding-left: 80px;
+        }
+        @media only screen and (min-width: 1285px) {
+          justify-content: start;
+        }
+        .project__span {
+          height: 70px;
+          width: 2px;
+          background-color: rgb(134, 218, 68);
+        }
+        .project__hero__left__text__wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 90px;
+        }
+        .project__left__text__top {
+          display: flex;
+          flex-direction: column;
+          gap: 26px;
+          h2 {
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 89px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+          }
+          p {
+            width: 100%;
+            max-width: 486px;
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 167%;
+            letter-spacing: 6%;
+          }
+          button {
+            width: 100%;
+            max-width: 210px;
+            height: 56px;
+            color: rgb(255, 255, 255);
+            font-family: Oswald;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 167%;
+            letter-spacing: 6%;
+            border: 1px solid rgb(134, 218, 68);
+          }
+        }
+        .project__left__text__bottom {
+          display: flex;
+          align-items: center;
+          span,
+          p {
+            color: #fff;
+            font-family: Oswald;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 121.7%;
+            letter-spacing: 0%;
+          }
+          p {
+            font-size: 35px;
+            color: rgb(134, 218, 68);
+          }
+        }
+      }
+    }
+  }
+}

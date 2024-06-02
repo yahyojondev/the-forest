@@ -1,0 +1,156 @@
+.product {
+  padding: 95px 0px;
+  background: rgb(30, 30, 30);
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 120px;
+      .product__title {
+        position: relative;
+        h2 {
+          color: rgba(255, 255, 255, 0.1);
+          font-family: Oswald;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 131.7%;
+          letter-spacing: 0%;
+          text-transform: uppercase;
+          @media only screen and (min-width: 700px) {
+            font-size: 90px;
+          }
+        }
+        .product__title__absolute {
+          position: absolute;
+          display: flex;
+          gap: 32px;
+          @media only screen and (min-width: 500px) {
+            left: 100px;
+          }
+          span {
+            height: 70px;
+            width: 2px;
+            background-color: rgb(134, 218, 68);
+          }
+          h2 {
+            color: rgb(134, 218, 68);
+            font-family: Oswald;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 131.7%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .products__cards {
+        display: flex;
+        align-items: center;
+        @media only screen and (min-width: 1300px) {
+          padding-left: 18px;
+        }
+        .mySwiper {
+          .swiper__slide {
+            width: 100%;
+            max-width: 462px;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .product__card {
+              padding: 10px;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              max-width: 365px;
+              gap: 20px;
+              height: 80px;
+              backdrop-filter: blur(40px);
+              display: flex;
+              align-items: center;
+              padding: 0px 10px;
+              h3 {
+                color: rgb(255, 255, 255);
+                font-family: Oswald;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 121.7%;
+                letter-spacing: 0%;
+              }
+              svg {
+                font-size: 25px;
+                color: #fff;
+              }
+            }
+          }
+        }
+        #swiper__two,
+        #swiper__three {
+          display: none;
+        }
+        @media only screen and (min-width: 560px) {
+          #swiper__one {
+            display: none;
+          }
+          #swiper__two {
+            display: flex;
+          }
+        }
+        @media only screen and (min-width: 1000px) {
+          #swiper__two {
+            display: none;
+          }
+          #swiper__three {
+            display: flex;
+          }
+        }
+      }
+      .product__bottom__cards {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // justify-content: center;
+        //
+        @media only screen and (min-width: 400px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+        @media only screen and (min-width: 700px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+        @media only screen and (min-width: 1000px) {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          // column-gap: 192px;
+          // row-gap: 49px;
+          gap: 30px;
+        }
+        @media only screen and (min-width: 1300px) {
+          column-gap: 192px;
+          row-gap: 49px;
+        }
+      }
+    }
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(134, 218, 68);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px;
+}
+.swiper-pagination-bullet {
+  background-color: rgb(134, 218, 68);
+}
